@@ -1,0 +1,15 @@
+
+
+
+.imagess{
+    background-image: url(../../assets/img/banner/Digital-Transformation.jpg);
+    background-size: cover;
+    height: 700px;
+    padding: 140px;
+}
+@media (max-width: 768px) { 
+    .imagess{
+        padding: 40px;
+        height: 500px;
+    }
+ }

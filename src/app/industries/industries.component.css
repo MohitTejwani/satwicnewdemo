@@ -1,0 +1,35 @@
+.icon-indu{
+    height: 60px;
+    width: 60px;
+}
+
+.about {
+    padding-bottom: 30px;
+}
+
+.about-lists {
+    padding: 40px;
+}
+.about-lists .row {
+    overflow: hidden;
+}
+.no-gutters{
+    margin-right: 0;
+    margin-left: 0;   
+}
+ 
+    
+ 
+    
+    
+
+
+
+
+
+.content-item{
+    padding: 40px;
+    border-left: 1px solid #d9e8f4;
+    border-bottom: 1px solid #d9e8f4;
+    margin: -1px;
+}

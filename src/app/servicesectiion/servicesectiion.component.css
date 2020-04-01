@@ -1,0 +1,20 @@
+
+
+
+.imagess{
+    background-size: cover;
+    height: 700px;
+    padding: 140px;
+}
+@media (max-width: 768px) { 
+    .imagess{
+        padding: 40px;
+        height: 500px;
+    }
+ }
+
+ .section-title h2{
+     font-weight: 700;
+     color: #000;
+     line-height: 50px
+ }

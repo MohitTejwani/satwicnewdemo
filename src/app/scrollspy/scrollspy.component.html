@@ -1,0 +1,306 @@
+<div class="listviewgrpoup">
+  <div (click)="scrollTo('section1')" class="vnavbod">
+    <a *ngIf="currentSection==='section1'" class="vnav"> Navigate to Next </a>
+    <a *ngIf="currentSection!=='section1'" class="vnavi"> Navigate to Next </a>
+  </div>
+  <div (click)="scrollTo('digital-transformation')" class="vnavbod">
+    <a *ngIf="currentSection==='digital-transformation'" class="vnav"> Digital Transformation</a>
+    <a *ngIf="currentSection!=='digital-transformation'" class="vnavi"> Digital Transformation</a>
+  </div>
+  <div (click)="scrollTo('data-operational')" class="vnavbod">
+    <a *ngIf="currentSection==='data-operational'" class="vnav"> Data Operational</a>
+    <a *ngIf="currentSection!=='data-operational'" class="vnavi"> Data Operational</a>
+  </div>
+  <div (click)="scrollTo('digital-operating')" class="vnavbod">
+    <a *ngIf="currentSection==='digital-operating'" class="vnav"> Digital Operating</a>
+    <a *ngIf="currentSection!=='digital-operating'" class="vnavi"> Digital Operating</a>
+  </div>
+  <div (click)="scrollTo('about-us')" class="vnavbod">
+    <a *ngIf="currentSection==='about-us'" class="vnav"> About Us</a>
+    <a *ngIf="currentSection!=='about-us'" class="vnavi"> About Us</a>
+  </div>
+  <div (click)="scrollTo('industries')" class="vnavbod">
+    <a *ngIf="currentSection==='industries'" class="vnav"> Industries</a>
+    <a *ngIf="currentSection!=='industries'" class="vnavi"> Industries</a>
+  </div>
+
+  <div (click)="scrollTo('services')" class="vnavbod">
+    <a *ngIf="currentSection==='services'" class="vnav"> Services</a>
+    <a *ngIf="currentSection!=='services'" class="vnavi"> Services</a>
+  </div>
+
+  <div (click)="scrollTo('customer')" class="vnavbod">
+    <a *ngIf="currentSection==='customer'" class="vnav"> Customer</a>
+    <a *ngIf="currentSection!=='customer'" class="vnavi"> Customer</a>
+  </div>
+
+
+  <div (click)="scrollTo('client-partner')" class="vnavbod">
+    <a *ngIf="currentSection==='client-partner'" class="vnav"> Clients </a>
+    <a *ngIf="currentSection!=='client-partner'" class="vnavi"> Partners</a>
+  </div>
+
+  <div (click)="scrollTo('ourteam')" class="vnavbod">
+    <a *ngIf="currentSection==='ourteam'" class="vnav"> Team </a>
+    <a *ngIf="currentSection!=='ourteam'" class="vnavi"> Team </a>
+  </div>
+
+
+  <div (click)="scrollTo('contact-us')" class="vnavbod">
+    <a *ngIf="currentSection==='contact-us'" class="vnav"> Contact Us </a>
+    <a *ngIf="currentSection!=='contact-us'" class="vnavi"> Contact Us </a>
+  </div>
+
+
+
+
+</div>
+<br />
+
+
+<div id="parentDiv" scrollSpy [spiedTags]="['DIV']" (sectionChange)="onSectionChange($event)" class="mainSection">
+  <div id="section1">
+    <section class="d-flex align-items-center hero1">
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <div class="row bg-white">
+            <div class="col-lg-3 col-md-3  headerOption1  bgopa">
+              <a href="#digital-transformation" onclick="closeNav()" class="bgopaa"> Digital Transformation</a>
+            </div>
+            <div class="col-lg-3 col-md-3 headerOption1 bgopb">
+              <a href="#data-operational" onclick="closeNav()" class="bgopaa">Digital Operating Models</a>
+
+            </div>
+            <div class="col-lg-3 col-md-3  headerOption1 bgopc">
+              <a href="#digital-operating" onclick="closeNav()" class="bgopaa">Operational Performance</a>
+
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 bgopd">
+              <a href="#about-us" onclick="closeNav()">About Us </a>
+              <a href="#industries" onclick="closeNav()">Industries </a>
+              <a href="#services" onclick="closeNav()">Services </a>
+              <a href="#customer" onclick="closeNav()">Customer </a>
+              <a href="#client-partner" onclick="closeNav()">Clients</a>
+              <a href="#client-partner" onclick="closeNav()">Partners</a>
+              <a href="#ourteam" onclick="closeNav()">Team </a>
+              <a href="#contact-us" onclick="closeNav()">Contact Us </a>
+             
+
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="opentabbox">
+        <span class="openTab" onclick="openNav()">&#9776;</span>
+
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div>
+              <h1 class="text-white">Making a Digital Enterprise </h1>
+              <p class="text-white">Deploy technology for profit instead of just operational</p>
+
+
+              <a href="#" class="btn btn-shutter-more"><i class="bx bxs-like bx-spin"></i> Read More</a>
+              <!-- <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a> -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- End Hero -->
+  </div>
+
+  <div id="digital-transformation">
+    <app-demosection></app-demosection>
+  </div>
+
+  <div id="data-operational">
+    <app-operationalsection></app-operationalsection>
+  </div>
+
+  <div id="digital-operating">
+    <app-practicesection></app-practicesection>
+  </div>
+
+  <div id="about-us">
+    <app-aboutus></app-aboutus>
+  </div>
+  <div id="industries">
+    <app-industries></app-industries>
+  </div>
+
+  <div id="services">
+    <app-servicesectiion></app-servicesectiion>
+  </div>
+
+  <div id="customer">
+    <app-lovecustomer></app-lovecustomer>
+  </div>
+
+  <div id="client-partner">
+    <app-client></app-client>
+  </div>
+
+  <div id="ourteam">
+    <app-ourteam></app-ourteam>
+  </div>
+  <div id="contact-us">
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+          <div class="section-title">
+              <h2>Contact Us</h2>
+          </div>
+
+          <div class="row">
+
+              <div class="col-lg-6 d-flex align-items-stretch" >
+                  <div class="info-box">
+                      <div class="row">
+                          <div class="col-12">
+                              <h3>Our Locations</h3>
+                          </div>
+                          <div class="col-6 text-center">
+                              <i class="bx bx-map"></i>
+
+                              <p>117 E Colorado Blvd, Suite 200 Pasadena, CA,USA </p>
+                          </div>
+                          <div class="col-6 text-center" style="border-left-style: outset;">
+                              <i class="bx bx-map"></i>
+                              <p>#34 Akash Avenue 1st main road, SBM colony, Anand nagar Main Road Bangalore,India</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 d-flex align-items-stretch"  data-aos-delay="100">
+                  <div class="info-box">
+                      <i class="bx bx-envelope"></i>
+                      <h3>Email Us</h3>
+                      <p>info@example.com<br>contact@example.com</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-3 d-flex align-items-stretch"  data-aos-delay="200">
+                  <div class="info-box ">
+                      <i class="bx bx-phone-call"></i>
+                      <h3>Call Us</h3>
+                      <p>(818)230-2181<br>(080)2355-8400</p>
+                  </div>
+              </div>
+
+              <div class="col-lg-12"  data-aos-delay="300">
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                      <div class="form-row">
+                          <div class="col-lg-6 form-group">
+                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                              <div class="validate"></div>
+                          </div>
+                          <div class="col-lg-6 form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                  data-rule="email" data-msg="Please enter a valid email" />
+                              <div class="validate"></div>
+                          </div>
+                      </div>
+                      <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                              data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                          <div class="validate"></div>
+                      </div>
+                      <div class="form-group">
+                          <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                              placeholder="Message"></textarea>
+                          <div class="validate"></div>
+                      </div>
+                      <div class="mb-3">
+                          <div class="loading">Loading</div>
+                          <div class="error-message"></div>
+                          <div class="sent-message">Your message has been sent. Thank you!</div>
+                      </div>
+                      <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+              </div>
+
+          </div>
+
+      </div>
+  </section><!-- End Contact Us Section -->
+
+
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-lg-3 col-md-6 footer-info">
+              <img src="../../assets/img/usa.png" alt="" class="img-bot">
+              <h3>Satwic Inc</h3>
+              <br>
+              <p>117 E Colorado Blvd, Suite 200 Pasadena, CA,USA 91105
+                <br><br>
+                <strong>Phone:</strong> (818)230-2181<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <br>
+              <img src="../../assets/img/india.png" class="img-bot" style="margin-bottom:10px">
+              <h3>Satwic Software solutions Pvt. Ltd.</h3>
+              <p>#34 Akash Avenue 1st main road, SBM colony, Anand nagar Main Road Bangalore,India 560024
+                <br><br>
+                <strong>Phone:</strong> (808)2355-8400<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Industries</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h4>Our Services</h4>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Business Intelligence & Data Integration</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Business Intelligence / Data Warehousing</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Data Integration Implementation</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Platform Migrations Implementation</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="#">Managed Support Services</a></li>
+              </ul>
+            </div>
+
+            <div class="col-lg-4 col-md-6 ">
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  </div>
+</div>
